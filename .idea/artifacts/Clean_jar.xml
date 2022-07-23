@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Clean:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Clean_jar</output-path>
+    <root id="archive" name="Clean.jar">
+      <element id="module-output" name="Clean" />
+    </root>
+  </artifact>
+</component>
