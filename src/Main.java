@@ -1,25 +1,42 @@
 import java.text.DecimalFormat;
-import java.text.NumberFormat;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("Hello world!");
-        greetUser("Martin");
 
-        System.out.println("Calculadora de Pagos mensuales de hipoteca !");
+        //System.out.println("Calculadora de Pagos mensuales de hipoteca !");
         /*
         int principal = (int) readInputs("Input Principal amount: ",100000,1000000);
         float interest = (float) readInputs("Input Annual interest rates ",1,30);
         byte periods = (byte) readInputs("Input the Period(Years): ",1,30);
         */
-        int principal = 180000;
-        float interest = 4f;
-        byte periods = 10 ;
-        mortgagePlan(principal,interest,periods);
-        System.out.println();
+        // mortgagePlan(principal,interest,periods);
+        /*
+        var textBox1 = new TextBox();
+
+
+        textBox1.setText("Box 1");
+
+        System.out.println(textBox1.text.toUpperCase() );
+        var textBox2 = new TextBox();
+        textBox2.setText("Box 2");
+        System.out.println(textBox2.text.toUpperCase());
+        */
+
+        new Employee(10);
+        var employee1 = new Employee(500000,20);
+
+        int wage = employee1.calculateWage(20);
+        System.out.println(wage);
+        System.out.println(Employee.numberOfEmployees);
+
     }
+
+
+
+
+
     static public void mortgagePlan(int principal,float interest,byte periods){
 
         final byte mesesEnUnAnio = 12;
