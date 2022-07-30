@@ -8,6 +8,7 @@ public class MortgagePlan {
     private float interestMonthly;
     private short periodsMonthly;
     public MortgagePlan(){
+        
         final float percentage = 100;
         final byte mesesEnUnAnio = 12;
         this.principal = (int) readInputs("Input Principal amount: ",100000,1000000);
