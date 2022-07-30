@@ -7,9 +7,8 @@ public class Main {
 
         //System.out.println("Calculadora de Pagos mensuales de hipoteca !");
 
-
         var mortgagePlan = new MortgagePlan();
-        mortgagePlan.printMonthlyPayments();
+        //mortgagePlan.printMonthlyPayments();
         mortgagePlan.printMonthPayment();
 
         /*

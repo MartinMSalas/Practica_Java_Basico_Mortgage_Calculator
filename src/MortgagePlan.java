@@ -1,6 +1,8 @@
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
+import static java.lang.Float.parseFloat;
+
 public class MortgagePlan {
     private int principal;
     private float interestMonthly;
@@ -57,6 +59,13 @@ public class MortgagePlan {
         return resultado;
     }
     private float mortgageCalculator(int principal,float interestMonthly,short periodsMonthly){
+        DecimalFormat df = new DecimalFormat("#,00");
+
+
+
+
+        interestMonthly = Float.parseFloat(df.format(interestMonthly));
+        System.out.println("Im interestMonthly: "+interestMonthly);
         float numerador = principal *  (interestMonthly * (float) Math.pow((interestMonthly + 1), periodsMonthly ));
         float denominador =  (float) Math.pow((interestMonthly + 1), periodsMonthly) -1;
         float monthlyPayments = numerador / denominador;
