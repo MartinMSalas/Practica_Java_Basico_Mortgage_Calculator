@@ -1,15 +1,15 @@
-import java.text.DecimalFormat;
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
 
 
         //System.out.println("Calculadora de Pagos mensuales de hipoteca !");
 
-        var mortgagePlan = new MortgagePlan();
-        //mortgagePlan.printMonthlyPayments();
-        mortgagePlan.printMonthPayment();
+        var mortgageCalculator = new MortgageCalculator();
+
+        var mortageReport = new MortgageReport(mortgageCalculator);
+
+        mortageReport.printMonthlyPayments();
+        mortageReport.printMonthPayment();
 
         /*
         var textBox1 = new TextBox();
