@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        challenge1();
-        challenge2();
+        //challenge1();
+        //challenge2();
         challenge3();
-        challenge4();
+        //challenge4();
 
 
     }

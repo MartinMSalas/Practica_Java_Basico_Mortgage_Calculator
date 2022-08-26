@@ -2,17 +2,32 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        UIControl[] controls = {new TextBox(), new CheckBox()};
+
+        for (var control: controls
+             ) {
+            control.render();
+        }
+        /* Textbox
+        var textBox = new TextBox();
+        textBox.setText("Hello Martin !");
+        System.out.println(textBox );
+
+        var control = new UIControl(true);
+        show(textBox);
+        */
 
         // Ejercicio Calculadora de Hipoteca
-        //System.out.println("Calculadora de Pagos mensuales de hipoteca !");
+        /*
+        System.out.println("Calculadora de Pagos mensuales de hipoteca !");
 
-        //var mortgageCalculator = new MortgageCalculator();
+        var mortgageCalculator = new MortgageCalculator();
 
-        //var mortageReport = new MortgageReport(mortgageCalculator);
+        var mortageReport = new MortgageReport(mortgageCalculator);
 
-        //mortageReport.printMonthlyPayments();
-        //mortageReport.printMonthPayment();
-
+        mortageReport.printMonthlyPayments();
+        mortageReport.printMonthPayment();
+        */
         // Ejercicio Scanner
         /*
         Scanner scanner = new Scanner(System.in);
@@ -30,6 +45,7 @@ public class Main {
         //System.out.println(esDivisible(4,2));
 
         //Ejercicio Comida animal
+        /*
         Scanner scanner=new Scanner(System.in);
         System.out.print("Tell me the name of your dog: ");
         String name = scanner.nextLine();
@@ -38,19 +54,9 @@ public class Main {
         var freya = new Animal(name,kgOfFood);
 
         System.out.println(freya.getName()+" necesito "+cantidadPaquetes(freya)+" paquetes para estar satisfecha");
-
-
-        /*
-        var textBox1 = new TextBox();
-
-
-        textBox1.setText("Box 1");
-
-        System.out.println(textBox1.text.toUpperCase() );
-        var textBox2 = new TextBox();
-        textBox2.setText("Box 2");
-        System.out.println(textBox2.text.toUpperCase());
         */
+
+
         /*
         new Employee(10);
         var employee1 = new Employee(500000,20);
@@ -59,6 +65,13 @@ public class Main {
         System.out.println(wage);
         System.out.println(Employee.numberOfEmployees);
         */
+    }
+    public static void show(UIControl control){
+        if (control instanceof  TextBox){
+            TextBox textBox = (TextBox) control;
+            textBox.setText("wo lo looooo");
+        }
+        System.out.println(control);
     }
 
     private static int cantidadPaquetes(Animal freya) {

@@ -13,6 +13,7 @@ public class MortgageReport {
         System.out.println("I am the monthly pay: "+monthPayment);
     }
 
+
     public void printMonthlyPayments(){
         float[] monthlyPayments = calculator.mortgagePlan();
         DecimalFormat formateador = new DecimalFormat("#0.00");
